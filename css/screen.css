@@ -1,0 +1,29 @@
+html{
+    background-image:linear-gradient(top-bottom );
+
+}
+li{
+    padding: 10px 20px;
+    background-color: blueviolet;
+    border-radius: 2px;
+    box-sizing: border-box;
+    width: fit-content;
+    margin-bottom: 5px;
+    box-shadow: 2px solid transparent black;
+}
+li:hover{
+    background-color: black;
+    color: blueviolet;
+}
+li:nth-child(1),
+li:nth-child(3),
+li:nth-child(5){
+    color: white;
+}
+
+li:nth-child(1):hover,
+li:nth-child(3):hover,
+li:nth-child(5):hover{
+    color: blueviolet;
+    background-color: white;
+}
