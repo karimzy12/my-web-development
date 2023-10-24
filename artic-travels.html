@@ -1,0 +1,154 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media-queries</title>
+    <style>
+        *{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
+        }
+        a{
+            text-decoration: none;
+        }
+        section{
+            padding: 10px;
+            display: grid;
+            grid-template-columns:  1fr 1fr 1fr;
+        }
+        @media(mix-width:1201px){
+            
+        }
+        header{
+                background-color: #d4d4d4;
+                height: 100px;
+                padding: 20px;
+                box-sizing: border-box;
+        }
+
+        header img{
+            width: 100%;
+           height: 50;
+           size: 21px;
+                }
+        .discover{
+            padding: 5px;
+        }
+        nav{
+            display: flex;
+        }
+
+        nav ul{
+            display: flex;
+            list-style: none;
+            margin: 0;
+
+        }
+        nav li{
+            padding: 20px;
+        }
+
+        nav li a{
+            text-decoration: none;
+            color: #076164;
+        }
+        .book {
+            padding: 10px 20px;
+            background-color:#076164 ;
+            border: 2px solid #076164;
+            border-radius:25px ;
+        
+        }
+        .book a{
+            text-decoration: none;
+            color: #ffffff;
+        }
+        .hero p{
+            line-height: 25px;
+            color: #ffffff;
+
+
+        }
+        .hero h1{
+            font-size: 3em;
+            line-height: 48px;
+            color: #076164;
+
+        }
+        .hero button{
+            padding: 10px 20px;
+            background-color:#076164 ;
+            border: 2px solid #076164;
+            border-radius:25px ;
+        
+        }
+
+        .hero .discover{
+            background-color: transparent;
+            border: 2px solid #076164;
+            
+
+        }
+
+        .hero .discover a{
+            color: #ffffff;
+        }
+
+        .hero button a{
+            text-decoration: none;
+            color: #ffffff;
+
+        }
+        .hero{
+            height: 500px;
+            padding: 20px;
+            background-image: url(images/arctic\ travels\ hero\ bg.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <section>
+            <div class="col">
+                <img id="site-logo" src="./images/arctic logo.png" alt="arctic logo">
+            </div>
+            <div class="col">
+                <nav>
+                
+                    <ul>
+                        <li><a href="">home</a></li>
+                        <li><a href="">tours</a></li>
+                        <li><a href="">about</a></li>
+                        <li><a href="">contact</a></li>
+                        <li><a href="">galery</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col">
+                <button class="book"><a href="http://">book here</a></button>
+            </div>
+           
+        </section>
+     
+    </header>
+    <section class="hero">
+        <div class="col">
+            <h1>Plan the perfect winter trip</h1>
+            <p>Easily plan your ideal ski trip with the help of professionals</p>
+            <button><a href="">Book here</a></button>
+            <button class="Discover"><a href="">Discover</a></button>
+        </div>
+        <div class="col">
+
+        </div>
+
+    </section>
+   
+    
+</body>
+</html>
