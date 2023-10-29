@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-sizing</title>
+    <style>
+        .container{
+            background-color: rgb(233, 227, 233);
+            padding: 10px;
+            display: grid;
+            grid-template-columns: auto 400px minmax(200px, 500px);
+            grid-template-rows: 1fr 1fr 2fr;
+            grid-auto-rows: 50px;
+
+        }
+        p{
+            background-color: purple;
+            padding: 10px;
+            color: #fff;
+            border: 1px solid rgb(233, 227, 233);
+        }
+        footer{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <p>width expans to fill space</p>
+       <p>400px wide</p>
+       <p>min 200px max 500px</p>
+       <p>width expands to fill space</p>
+       <p>400px wide</p>
+       <p>min 200px max 500px</p>
+        <p>  width expands to fill space</p>
+        <p>400px wide</p>
+       <p>min 200px max 500px</p>
+       <p>50px high</p>
+    </div>
+    <footer>
+        <a href="grid.html">previous</a>
+        <a href="index.html">home</a>
+        <a href="mondrian.html">mordain-paint</a>
+    </footer>
+</body>
+</html>

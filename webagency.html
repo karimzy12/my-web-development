@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web agency</title>
+    <style>
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 50px 50px 0 50px;
+            background-color: aliceblue;
+            display: flex;
+            flex-direction: column;
+            min-height: 95vh;
+        }
+       
+        .main{
+            flex: 1;
+        }
+        h1{
+            font-size: 5rem;
+        }
+        .creative{
+            color: #a41ac7;
+        }
+        footer {
+            text-align: right;
+            color: #a41ac7;
+            
+        }
+        footer a{
+            text-align: left;
+        }
+        footer p{
+            text-align: right;
+            color: #a41ac7;
+            display: inline;
+        }
+       
+        
+        .tile-image{
+            height: 200px;
+            float: left;
+            margin-right: 50px;
+
+            
+        }
+        
+        .card{
+            width: 45%;
+        }
+        .left{
+            float: left;
+        }
+
+        .right{
+            float: left;
+        }
+        @media (max-width:680px){
+            .logo{
+                width:100px;
+            }
+            h1{
+            text-transform: capitalize;
+            text-align: center;
+            font-size: 3.6rem;
+            line-height: 60px;
+            }
+            .card{
+            width: 100%;
+            display: block;
+            margin-bottom: 30px;
+            text-align: justify;
+            }
+            .card img{
+            margin-bottom: 10px;
+            width: 100%;
+            display: inline;
+            object-fit: cover;
+            }
+        }
+       
+        
+    </style>
+</head>
+<body>
+   
+    <div class="main">
+        <img class="logo" style="height: min-content;" src="./images/ukhti lodo.png" alt="logo">
+        <h1>we are a <span class="creative">creative</span> <br/> design agency</h1> 
+        
+        <div class="left card"> <img class="tile-image" src="./images/construct.jpg" alt="">
+       
+            <h2 class="card-title" >beauty</h2>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam fuga, in dolores sequi illum ullam minima porro ab 
+                omnis perspiciatis nemo quaerat obcaecati
+                 error minus libero quasi esse quo ipsam?</p>
+        </div>
+        <div class="right card"><img class="tile-image" src="./images/responsivness.webp" alt="">
+         <h2 class="card-title">contruction</h2>
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores aliquid itaque accusamus exercitationem similique, vero, quos molestiae quae omnis quibusdam sed alias a ducimus porro. Repellat excepturi deleniti aliquid aspernatur!</p>
+         
+        </div>
+        
+    </div>
+  <footer>
+        <p>Create.Develop.Design </p>
+        <a href="index.html">go back</a>
+    </footer>
+    <!--<ul>
+        <li>create</li>
+        <li>develop</li>
+        <li>design</li>
+    </ul>--> 
+</body>
+</html>

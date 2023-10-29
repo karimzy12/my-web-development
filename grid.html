@@ -1,0 +1,181 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+
+        .main{
+            display: grid;
+            max-width:800px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 10px;
+            padding: 20px;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 4fr;
+            grid-template-rows:auto;
+            gap:0px;
+            width: 300px;
+        }
+       
+        .green{
+            height: 100px;
+            width: 100px;
+            background-color: #41570c;
+        }
+        .purple{
+            width: 100px;
+            height: 100px;
+            background-color:#9e00af ;
+        }
+        .container2{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1.5fr;
+            grid-template-rows:1fr 1fr;
+           
+            gap:1em;
+            
+        }
+        .item{
+            font-size: 5rem;
+            color: #9e00af;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: #e3ade9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .k{grid-column-start: span 2;}
+        .a{
+            order:1;
+            grid-column-start: span 2;
+        }
+        .o{
+            grid-row-start:span 2 ;
+          
+        }
+        .grid-container{
+            border: 2px solid black;
+            padding: 20px;
+            display: grid;
+            margin-top: 20px;
+            height: 200px;
+            width:400px ;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: repeat(11, 1fr);
+          /* grid-template-columns : 1.5fr .5fr 2fr  1fr;
+            grid-template-rows: 1.5fr 2fr .5fr ; */  
+            gap: 10px;
+        }
+        .grid-container> div{
+            background-color: #3512cf;
+            border-radius: 5px;
+            display: flex;
+        }
+        .con p{
+            margin: auto;
+        }
+        .one{
+            grid-column-start: span 3 ;
+            grid-row-start: span 3;
+        }
+        .two{
+            grid-column-start: span 1;
+            grid-row-start: span 3;
+
+        }
+        .three{
+            grid-column-start: span 4;
+            grid-row-start: span 9;
+        }
+        .four{
+            grid-column-start: span 2;
+            grid-row-start: span 3 ;
+        }
+        .five{
+            grid-column-start: span 4;
+            grid-row-start: span 6;
+        }
+        .six{
+            grid-column-start: span 2;
+            grid-row-start: span 8;
+        }
+
+        .seven{
+            grid-column-start: span 3;
+            grid-row-start: span 2;
+        }
+        .eight{
+            grid-column-start: span 1;
+            grid-row-start: span 2;
+        }
+        .nine{
+            grid-column-start: span 4;
+            grid-row-start: span 2;
+        }
+        header{
+            text-align: right;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">home</a>
+            <a href="grid-sizing.html">grid-sizing</a>
+            
+        </nav>
+    </header>
+   <div class="main">
+    <div class="container">
+        
+        <div class="green"></div>
+        <div class="purple"></div>
+        <div class="green"></div>
+        <div class="purple"></div>
+        <div class="green"></div>
+        <div class="purple"></div>
+        <div class="green"></div>
+        <div class="purple"></div>
+        <div class="green"></div>
+        <div class="purple"></div>
+        <div class="green"></div>
+        <div class="purple"></div>
+        <div class="green"></div>
+        <div class="purple"></div>
+        <div class="green"></div>
+        <div class="purple"></div>
+        <div class="green"></div>
+        <div class="purple"></div>
+     </div>
+ 
+     <di class="minimain">
+        <div class="container2">
+            <div class="item k">K</div>
+            <div class="item a">A</div>
+            <div class="item o">0</div>
+        </div>
+    
+        <div>
+            <div class="grid-container">
+                <div class="one con"> <p>1</p></div>
+                <div class="two con"> <p>2</p> </div>
+                <div class="three con"> <p>3</p></div>
+                <div class="four con"> <p>4</p> </div>
+                <div class="five con"><p>5</p></div>
+                <div class="six con"><p>6</p></div>
+                <div class="seven con"><p>7</p></div>
+                <div class="eight con"><p>8</p></div>
+                <div class="nine con"><p>9</p></div>
+            </div>
+        </div>
+     </div>
+   </div>
+   
+</body>
+</html>
