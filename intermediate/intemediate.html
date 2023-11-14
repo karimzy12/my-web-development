@@ -33,7 +33,7 @@
         line-height: 38px;
         font-family:cursive;
        }
-       .button a{
+      .button a{
           display:block;
           margin-bottom: 20px;
           background-color: #ffffff00;
@@ -59,7 +59,7 @@
           grid-template-columns: repeat(3, 1fr);
           
         }
-      .button a{
+        .button a{
           margin-left: 20px;
          
         }
@@ -68,29 +68,44 @@
         .tivity{
           color: #ffffff;
         }
-       .logo a{
-       text-decoration: none
-       ;
+       h1{
+        margin: none;
+        padding: none;
+       }
+       ul{
+        margin: 0;
+        padding: 0;
+       }
+       .dropdown a{
+         border: 0px;
+         padding: 10px;
        }
 
     </style>
 </head>
 <body>
   <div class="hero">
-    <div class="logo">
+    <div>
       <h1>
-       <a href="index.html">koa <span class="tivity">_tivity</span></a> 
+        koa <span class="tivity">_tivity</span>
       </h1>
     </div>
     <div>
-      <h2>Welcome to my web development journey </h2>
+      <h2>web-dev/ intermidiate</h2>
     </div>
+   
     <div class="button-container">
-      <div class="button"><a href="mainpage.html">Beginner</a></div>
-      <div class="button"><a href="./intermediate/intemediate.html">intermidiate</a></div>
-      <div class="button"><a href="./advance/">advance</a></div>
+      <div class="button"><a href="#">potfolios &gt;</a>
+        <ul class="dropdown">
+          <li>
+            <a href="index.html">my frist potfolio</a>
+          </li>
+        </ul>
+      </div>
+      <div class="button"><a href="#">school web sites &gt;</a></div>
+      <div class="button"><a href="#">other websites &gt;</a></div>
     </div>
   </div>
- 
+
 </body>
 </html>

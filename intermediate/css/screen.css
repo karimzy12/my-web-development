@@ -1,0 +1,74 @@
+div{
+    align-content:center;
+}
+.container{
+    padding: 20px;
+    margin: 0, auto;
+}
+header{
+    height: 50px;
+    align-items: center;
+    background-color: #0a2520;
+    padding: 20px;
+}
+header .row{
+    display: grid;
+    grid-template-columns: 2fr 6fr 2fr;
+}
+ul{
+    display: flex;
+}
+.row{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    max-width: 980px;
+    
+}
+.hero{
+    height: 500px;
+    background-color: #143a2d;
+    padding: 10px;
+    
+}
+button{
+    padding: 10px;
+    background-color: #e46712;
+    border:2px solid #e46712;
+    border-radius: 20px;
+    color: #ffffff;
+}
+.hero h2,p{
+    color: #ffffff;
+}
+.about-us > h4, p{
+color: black;
+}
+.services{
+    background-color: #143a2d;
+}
+.service-row{
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    padding: 30px;
+    box-sizing: border-box;
+    gap: 20px;
+
+}
+.service-row .col{
+    background-color: #0a2520;
+    padding: 20px;
+    border-radius:50% 50% 0px 0px;
+    border: 2px solid #104734;
+    color: #ffffff;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+.service-row .col p{
+    color: #ffffff;
+}
+ 
+
